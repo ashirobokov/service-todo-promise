@@ -1,0 +1,20 @@
+group 'ru.ashirobokov.qbit.todo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'io.advantageous.reakt:reakt:4.0.0'
+    compile group: 'io.advantageous.qbit', name: 'qbit-admin', version: '2.0.0'
+    compile group: 'io.advantageous.qbit', name: 'qbit-vertx', version: '2.0.0'
+    compile 'org.slf4j:slf4j-api:[1.7,1.8)'
+    compile 'ch.qos.logback:logback-classic:1.1.8'
+    compile 'ch.qos.logback:logback-core:1.1.8'
+}
